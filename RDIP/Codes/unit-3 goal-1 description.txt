@@ -1,0 +1,40 @@
+Computational Linguistics lab:
+Experiment:Forming Sentences:
+this is a experiment that tells you about sentences in english and clauses used in sentences
+The objective of experiment is to know how to form a sentence logically correct from the given words
+LIST OF FUNCTIONALITIES IN THE GIVEN EXPERIMENT:
+1)select language function:
+In this experiment first we need to select a language from the dropdown menu(English or Hindi)
+2)dispalying words in the form of buttons from the selected sentence function: 
+Form a sentece from the given words
+i.after selecting the language a sentence is choosen from the sentences available.
+ii.After choosing the sentence the sentence is divided into words.
+iii.these words are next converted to buttons and are displayed in shuffeled order.
+3)Forming a sentence from the selected words function
+i.A empty string is created
+ii.When ever the button is clicked the corresponding word is updated to the string
+iii.This process is continued till all the buttons are completed
+iv.After selecting the buttons in a paticular order a sentence is formed from the words.
+4)Checking if the sentence is correct or not function:
+i.After forming the sentence we have to check if the sentence is correct or not i.e whether the sentence is any of the form(Declarative or Interrogative or any other).
+ii.After the sentence is formed we will check if the sentence is correct or not by clicking the below button (check the correctness of this sentence)
+iii.if the formed sentence is correct we have to display the sentence is correct
+iv.if the sentence is wrong we havee to display wrong answer
+4)Displaying the correct answer function:
+i.if the answer is wrong we can see the correct answer by clicking the button below(show the answers)
+ii.after clicking the button to display the answer we have to display the corrct answers 
+and the button should work as hide button after we click it to display the answer
+iii.once we click the hide button it should work as display button
+5)Re-forming sentence function:
+i.if the answer is wrong we can either see the correct answer or we can re form the senence
+ii.we can reform the sentence by clicking the re-form sentence button
+iii.once the button is clicked then the sentence should be in old order i.e same order as before in the form of buttons and the buttons should bein same order
+
+In this experiment we can see other functions like navigation bar that contains links to other pages of experiment like introduction,theory,objective.
+all these pages also contain the same navigation bar that navigates to all other corresponding pages
+In this experiment once we select a language from the dropdown menu a sentence is automatically selected from the filoe attaced to the html file
+ these are the functions needed to complete this experiment and make it working as now.
+some other functions which we can add to this experimnet are
+1.we can add a function that will check how many words in our sentence are placed correctly with respect to the correct sentences.
+2.we can add a hint function to it which will help us in forming the sentence.
+3.we can also modify the re form button so that after clicking the button it should re form the sentence as buttons bu the worsd should not be in same order as earlier so it will increase the difficulty in completing the experiment.
