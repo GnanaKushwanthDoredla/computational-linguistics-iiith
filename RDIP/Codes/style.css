@@ -25,3 +25,9 @@ font-size:30px;
 text-align:center;
 font-style:italic;
 }
+#ans
+{
+position:absolute;
+left:35%;
+right:auto;
+}
