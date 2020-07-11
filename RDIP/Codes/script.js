@@ -30,6 +30,7 @@ document.getElementById("demo4").innerHTML = "";
 document.getElementById("demo6").innerHTML = "";
 document.getElementById("demo").innerHTML = "";
 document.getElementById("demo1").innerHTML = "";
+document.getElementById("demo7").innerHTML = "";
 return false;
 }
 else if(x =="english"){
@@ -37,22 +38,29 @@ document.getElementById("ans").innerHTML=" ";
 document.getElementById("demo3").innerHTML = "";
 document.getElementById("demo4").innerHTML = "";
 document.getElementById("demo6").innerHTML = "";
+document.getElementById("demo7").innerHTML = "";
 finishedsentence = " ";
 document.getElementById("demo").innerHTML = "Form a sentence (Declarative or Interrogative or any other type) from the given words";
 document.getElementById("demo1").innerHTML = "(select the buttons in proper order)";
 var english = englishsentence();
 return english;
 }
-else if(x =="hindi"){
+else if(x == "hindi"){
 document.getElementById("ans").innerHTML=" ";
 document.getElementById("demo3").innerHTML = "";
 document.getElementById("demo4").innerHTML = "";
 document.getElementById("demo6").innerHTML = "";
+document.getElementById("demo7").innerHTML = "";
 finishedsentence = "";
 document.getElementById("demo").innerHTML = "Form a sentence (Declarative or Interrogative or any other type) from the given words";
 document.getElementById("demo1").innerHTML = "(select the buttons in proper order)";
 var hindi = hindisentence();
 return hindi;
+}
+else
+{
+alert("select language");
+return false;
 }
 }
 var initialvalues = "";
@@ -120,6 +128,10 @@ document.getElementById("demo4").innerHTML = finishedsentence;
 document.getElementById(id).style.display = "none";
 document.getElementById("demo6").innerHTML = "<center><button id='reform' onclick='resets(initialvalues)'>Re-form the sentence</button></center>"
 wordcount++;
+if(wordcount == buttoncount)
+{
+document.getElementById("demo7").innerHTML = "<center><button id='check' onclick='checkfunc(finishedsentence)'>Check the correctness of sentence</button></center>"
+}
 return true;
 }
 
@@ -134,3 +146,7 @@ finishedsentence = "";
 return true;
 }
 
+function checkfunc()
+{
+
+}
