@@ -206,7 +206,7 @@ document.getElementById("demo11").innerHTML = answer;
 }
 function hides()
 {
-document.getElementById("demo10").innerHTML = "<center><button id='showansbtn1' onclick='tooglefunc()'>get correct answer</button></center>"
+document.getElementById("demo10").innerHTML = "<center><button id='showansbtn1' onclick='tooglefunc()'>GET answers</button></center>"
 document.getElementById("demo11").innerHTML = "";
 }
 function tooglefunc()
