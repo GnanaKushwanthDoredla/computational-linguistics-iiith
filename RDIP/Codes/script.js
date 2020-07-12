@@ -24,21 +24,7 @@ var wordcount = 0;
 function sentencefunc()
 {
 var x = document.getElementById("lang").value;
-if(x == "null")
-{
-alert("Select a language");
-document.getElementById("ans").innerHTML = "";
-document.getElementById("demo3").innerHTML = "";
-document.getElementById("demo4").innerHTML = "";
-document.getElementById("demo6").innerHTML = "";
-document.getElementById("demo").innerHTML = "";
-document.getElementById("demo1").innerHTML = "";
-document.getElementById("demo7").innerHTML = "";
-document.getElementById("demo10").innerHTML = "";
-document.getElementById("demo11").innerHTML = "";
-return false;
-}
-else if(x =="english"){
+if(x =="english"){
 document.getElementById("ans").innerHTML=" ";
 document.getElementById("demo3").innerHTML = "";
 document.getElementById("demo4").innerHTML = "";
@@ -47,6 +33,10 @@ document.getElementById("demo7").innerHTML = "";
 document.getElementById("demo10").innerHTML = "";
 document.getElementById("demo11").innerHTML = "";
 finishedsentence = " ";
+buttoncount = 0;
+wordcount = 0;
+document.getElementById("demo8").innerHTML = "";
+document.getElementById("demo9").innerHTML = "";
 document.getElementById("demo").innerHTML = "Form a sentence (Declarative or Interrogative or any other type) from the given words";
 document.getElementById("demo1").innerHTML = "(select the buttons in proper order)";
 var english = englishsentence();
@@ -61,6 +51,10 @@ document.getElementById("demo7").innerHTML = "";
 document.getElementById("demo10").innerHTML = "";
 document.getElementById("demo11").innerHTML = "";
 finishedsentence = "";
+buttoncount = 0;
+wordcount = 0;
+document.getElementById("demo8").innerHTML = "";
+document.getElementById("demo9").innerHTML = "";
 document.getElementById("demo").innerHTML = "Form a sentence (Declarative or Interrogative or any other type) from the given words";
 document.getElementById("demo1").innerHTML = "(select the buttons in proper order)";
 var hindi = hindisentence();
@@ -69,6 +63,20 @@ return hindi;
 else
 {
 alert("select language");
+document.getElementById("ans").innerHTML=" ";
+document.getElementById("demo3").innerHTML = "";
+document.getElementById("demo4").innerHTML = "";
+document.getElementById("demo6").innerHTML = "";
+document.getElementById("demo7").innerHTML = "";
+document.getElementById("demo10").innerHTML = "";
+document.getElementById("demo11").innerHTML = "";
+document.getElementById("demo").innerHTML = "";
+document.getElementById("demo1").innerHTML = "";
+buttoncount = 0;
+wordcount = 0;
+document.getElementById("demo8").innerHTML = "";
+document.getElementById("demo9").innerHTML = "";
+finishedsentence = "";
 return false;
 }
 }
